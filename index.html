@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature Foundation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- LEAF INTRO COVER -->
+  <section class="leaf-intro">
+    <div class="leaf left-leaf"></div>
+    <div class="leaf right-leaf"></div>
+    <button class="discover-btn">Discover Nature</button>
+  </section>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <nav class="navbar">
+      <h1 class="logo">🌿 Nature<span>Care</span></h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="missions.html">Our Mission</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#" class="nav-donate">Donate</a></li> <!-- Added class for JS -->
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <video autoplay muted loop class="hero-video">
+        <source src="4237846-uhd_3840_2160_24fps.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-text">
+        <h2>Together, We Nurture the Earth</h2>
+        <p>Join us in protecting the planet for generations to come.</p>
+        <button class="action-btn" id="joinCauseBtn">Join the Cause</button>
+      </div>
+    </div>
+  </section>
+  <!-- HERO SECTION is already added -->
+<!-- Bridge Section -->
+<section class="hero-bridge">
+  <div class="bridge-content">
+    <h2>Explore the Wonders of Nature</h2>
+    <p>
+      Join us on our journey to protect the environment. Every action counts,
+      and together we can create a greener, healthier planet.
+    </p>
+    <a href="#our-mission" class="cta-btn">Learn More</a>
+  </div>
+</section>
+<!-- Our Mission Section -->
+<section id="our-mission" class="our-mission">
+  <div class="mission-container">
+
+    <!-- First Row: Text Left, Image Right -->
+    <div class="mission-row">
+      <div class="mission-text">
+        <h2>Our Mission</h2>
+        <p>
+          At NatureCare, we are committed to preserving the planet’s biodiversity
+          and creating sustainable ecosystems. Through community projects and
+          educational initiatives, we empower people to make a real impact.
+        </p>
+      </div>
+      <div class="mission-image">
+        <img src="pexels-jack-redgate-333633-3049327.jpg" alt="Forest Conservation">
+      </div>
+    </div>
+
+    <!-- Second Row: Image Left, Text Right -->
+    <div class="mission-row reverse">
+      <div class="mission-image">
+        <img src="pexels-pixabay-247431.jpg" alt="Wildlife Protection">
+      </div>
+      <div class="mission-text">
+        <h2>Community Projects</h2>
+        <p>
+          Our projects connect volunteers with local communities to restore
+          habitats, plant trees, and protect wildlife. Collaboration is key to
+          lasting environmental change.
+        </p>
+      </div>
+    </div>
+
+    <!-- Third Row: Text Left, Image Right -->
+    <div class="mission-row">
+      <div class="mission-text">
+        <h2>Education & Awareness</h2>
+        <p>
+          Educating future generations about conservation is vital. Our
+          workshops, campaigns, and interactive sessions inspire people to
+          adopt eco-friendly lifestyles.
+        </p>
+      </div>
+      <div class="mission-image">
+        <img src="pexels-angeloduranti-3512848.jpg" alt="Environmental Education">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FEATURED PROJECTS -->
+<section class="projects">
+  <h2>Our Initiatives</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="Trees plantation.jpg" alt="Tree Planting">
+      <h3>Tree Planting</h3>
+      <p>Planting thousands of trees in endangered areas to restore ecosystems.</p>
+    </div>
+    <div class="project-card">
+      <img src="Wildlife.jpg" alt="Wildlife Protection">
+      <h3>Wildlife Protection</h3>
+      <p>Providing shelter and safety for endangered species across the globe.</p>
+    </div>
+    <div class="project-card">
+      <img src="River.jpg" alt="River Cleanup">
+      <h3>River Cleanup</h3>
+      <p>Removing pollutants and plastics to restore freshwater habitats.</p>
+    </div>
+  </div>
+</section>
+<!-- DONATE MODAL -->
+<div id="donateModal" class="modal">
+  <div class="modal-content">
+    <span id="closeDonate" class="close">&times;</span>
+    <h2>Donate to NatureCare</h2>
+    <form id="donateForm">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="number" name="amount" placeholder="Donation Amount ($)" min="1" required>
+      <select name="payment" required>
+        <option value="">Select Payment Method</option>
+        <option value="credit-card">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="bank-transfer">Bank Transfer</option>
+      </select>
+      <button type="submit" class="action-btn">Donate</button>
+    </form>
+  </div>
+</div>
+<!-- CALL TO ACTION -->
+<section class="get-involved">
+  <div class="cta-container">
+    <h2>Join Us in Making a Difference</h2>
+    <button class="action-btn">Donate Now</button>
+    <button class="action-btn">Volunteer</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 NatureCare. All rights reserved by Mahnoor.</p>
+    <div class="social-links">
+      <a href="#">🌐</a>
+      <a href="#">📘</a>
+      <a href="#">🐦</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
